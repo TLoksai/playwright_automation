@@ -6,7 +6,7 @@ import { test, expect } from '@playwright/test';
  */
 test.describe('Sign Up', () => {
   test('should display Sign Up tab on page load', async ({ page }) => {
-    await page.goto('/auth');
+    await page.goto('https://knowsygame.netlify.app/auth', { timeout: 60000 });
     await page.waitForLoadState('domcontentloaded');
     
     const signUpTab = page.getByRole('tab', { name: /sign up/i });
@@ -14,7 +14,7 @@ test.describe('Sign Up', () => {
   });
 
   test('should switch to Sign Up tab', async ({ page }) => {
-    await page.goto('/auth');
+    await page.goto('https://knowsygame.netlify.app/auth', { timeout: 60000 });
     await page.waitForLoadState('domcontentloaded');
     
     const signUpTab = page.getByRole('tab', { name: /sign up/i });
@@ -24,7 +24,7 @@ test.describe('Sign Up', () => {
   });
 
   test('should show validation error for empty fields', async ({ page }) => {
-    await page.goto('/auth');
+    await page.goto('https://knowsygame.netlify.app/auth', { timeout: 60000 });
     await page.waitForLoadState('domcontentloaded');
     
     const signUpTab = page.getByRole('tab', { name: /sign up/i });
@@ -39,7 +39,7 @@ test.describe('Sign Up', () => {
   });
 
   test('should show error for password less than 6 characters', async ({ page }) => {
-    await page.goto('/auth');
+    await page.goto('https://knowsygame.netlify.app/auth', { timeout: 60000 });
     await page.waitForLoadState('domcontentloaded');
     
     const signUpTab = page.getByRole('tab', { name: /sign up/i });
@@ -63,7 +63,7 @@ test.describe('Sign Up', () => {
   });
 
   test('should show password character counter', async ({ page }) => {
-    await page.goto('/auth');
+    await page.goto('https://knowsygame.netlify.app/auth', { timeout: 60000 });
     await page.waitForLoadState('domcontentloaded');
     
     const signUpTab = page.getByRole('tab', { name: /sign up/i });
@@ -85,7 +85,7 @@ test.describe('Sign Up', () => {
   });
 
   test('should submit with valid name, email and password', async ({ page }) => {
-    await page.goto('/auth');
+    await page.goto('https://knowsygame.netlify.app/auth', { timeout: 60000 });
     await page.waitForLoadState('domcontentloaded');
     
     const signUpTab = page.getByRole('tab', { name: /sign up/i });
@@ -107,7 +107,7 @@ test.describe('Sign Up', () => {
   });
 
   test('should mask password field', async ({ page }) => {
-    await page.goto('/auth');
+    await page.goto('https://knowsygame.netlify.app/auth', { timeout: 60000 });
     await page.waitForLoadState('domcontentloaded');
     
     const signUpTab = page.getByRole('tab', { name: /sign up/i });
