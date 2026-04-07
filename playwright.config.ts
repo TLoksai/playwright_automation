@@ -48,11 +48,11 @@ export default defineConfig({
     // Collect traces for failed tests
     trace: 'on-first-retry',
 
-    // Collect screenshots on failure
-    screenshot: 'only-on-failure',
+    // Collect screenshots for every test (passed or failed)
+    screenshot: 'on',
 
-    // Collect videos on failure
-    video: 'retain-on-failure',
+    // Collect videos for every test (passed or failed)
+    video: 'on',
 
     // Action timeout
     actionTimeout: 10 * 1000,

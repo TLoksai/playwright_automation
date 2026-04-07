@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="QA Brand Logo">
+  <rect width="240" height="240" rx="40" fill="#0f766e"/>
+  <circle cx="120" cy="92" r="38" fill="#f8fafc"/>
+  <path d="M60 176c18-28 42-42 60-42s42 14 60 42" fill="none" stroke="#f8fafc" stroke-width="18" stroke-linecap="round"/>
+</svg>

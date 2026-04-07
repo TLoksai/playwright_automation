@@ -42,7 +42,7 @@ test.describe('Sign In', () => {
     
     // Email has placeholder
     const emailInput = page.getByPlaceholder('you@example.com');
-    await emailInput.fill('loksai12@xtransmatrix');
+    await emailInput.fill('loksai12@xtransmatrix.com');
     
     // Password has NO placeholder - use getByLabel instead
     const passwordInput = page.getByLabel('Password');
